@@ -14,7 +14,7 @@ const List = () => {
     useEffect(() => {
         const category = params.get('category');
         setLoading(true)
-        if (category != 'all') {
+        if (!category || category != 'all') {
             setData(lists.filter((x) => x.categories[0].name.toLowerCase() == category))
             setLoading(false)
         } else {
