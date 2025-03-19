@@ -1,7 +1,7 @@
 import List from "@/components/resturant/List";
 import Meals from "@/components/resturant/Meals";
 import { Suspense } from "react";
-import Loader from '../../clients/components/features/Loader'
+import Loader from '../components/features/Loader'
 
 export default function Home() {
   return (
